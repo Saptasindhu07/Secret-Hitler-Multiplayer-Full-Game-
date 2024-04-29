@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "production": "cd ./MainGame_/MainGame && nodemon gameRoomTest.js",
+    "watch": "nodemon server.js"
+  },
+  "dependencies": {
+    "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "helmet": "^7.1.0",
+    "node": "^18.20.2",
+    "nodemon": "^3.1.0",
+    "passport": "^0.5.3",
+    "passport-google-oauth20": "^2.0.0",
+    "socket.io": "^4.7.5",
+    "static": "^2.0.0"
+  }
+}

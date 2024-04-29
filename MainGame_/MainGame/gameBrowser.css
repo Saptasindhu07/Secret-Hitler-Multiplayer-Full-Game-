@@ -1,0 +1,633 @@
+
+.first-color { 
+	background: #155263; 
+}
+	
+.second-color { 
+	background: #ff6f3c; 
+}
+
+.third-color { 
+	background: #ff9a3c; 
+}
+
+.fourth-color { 
+	background: #ffc93c; 
+}
+.blur{
+    filter: blur(20px);
+}
+.collapse{
+    visibility: collapse;
+}
+body{
+    margin: 2px;
+    margin-inline: auto;
+    height: 95vh;
+    background-color: #f5671acd;
+    /*background-image: linear-gradient(to bottom right, #e95f2c ,#ffc83c);*/
+    backdrop-filter:unset;
+}
+.electionLossAnimation{
+    visibility: visible;
+    position: fixed;
+    width: 100vw;
+    height:100vh;
+    z-index:1 ;
+    background-color: #dff800;
+    animation-name: electionAnimation;
+    animation-duration: 2s;
+    transition-duration: 1s;
+    animation-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    animation-iteration-count: 1;
+    overflow: auto;
+}
+@keyframes electionAnimation{
+    0%{
+        width:10%;
+    }
+
+}
+.electionLossAnimationContent{
+    visibility: visible;
+    top:0%;
+    background-image: url('electionResult.jpeg');
+    height:100vh;
+    font-size: 400px;
+    color:rgb(255, 247, 0);
+    text-shadow: #001efc;
+    font-weight: bolder;
+    text-align: center;
+}
+.electionWinAnimation{
+    visibility: visible;
+    top:0%;
+    position: fixed;
+    width: 100vw;
+    height:100vh;
+    z-index:1 ;
+    background-color: #dff800;
+    animation-name: electionAnimation;
+    animation-duration: 2s;
+    transition-duration: 1s;
+    animation-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    animation-iteration-count: 1;
+    overflow: auto;
+}
+.electionWinAnimationContent{
+    visibility: visible;
+    background-image: url('electionResult.jpeg');
+    height:100vh;
+    font-size: 400px;
+    color:rgb(255, 247, 0);
+    text-shadow: #001efc;
+    font-weight: bolder;
+    text-align: center;
+}
+.ChooseCardInvisible{
+    position: fixed;
+}
+.ChooseCardInvisiblePresident{
+    position: fixed;
+}
+.ChooseCard{
+    
+    visibility: visible;
+    top:0%;
+    position: fixed;
+    z-index: 1;
+    height:100vh;
+    width:100vw;
+    background-color: #000003;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 70px ;
+    overflow:auto;
+}
+.card{
+    margin-left: 10%;
+    max-height:50%;
+    margin-top: 30%;
+}
+.card:hover{
+    transform: skew(5deg);
+    opacity: 100%;
+}
+.liberal{
+    background-image: url('Screenshot\ 2024-04-23\ 221315.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition-duration: 1s;
+    opacity:50% ;
+}
+.fascist{
+    background-image: url('Screenshot\ 2024-04-23\ 222455.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition-duration: 1s;
+    opacity:50% ;
+}
+.container{
+    height: 100%;
+    border:2px solid red;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-inline: auto;
+}
+.LiberalAnimation{
+    top:0%;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    width:100vw;
+    background-image:url('Screenshot\ 2024-04-24\ 015246.png') ;
+    transition-duration: 2s;
+    animation-name: finalanimation;
+    animation-duration: 2.7s;
+}
+.FascistAnimation{
+    top:0%;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    width:100vw;
+    background-image:url('Screenshot\ 2024-04-24\ 015258.png') ;
+    transition-duration: 2s;
+    animation-name: finalanimation;
+    animation-duration: 2.7s;
+}
+@keyframes finalanimation{
+    0%{
+        width:20vw;
+    }
+}
+#fascistWin{
+    position: fixed;
+}
+#liberalWin{
+    position: fixed;
+}
+.fascistwin{
+    position: fixed;
+    z-index: 1;
+    top:0%;
+    width:100vw;
+    height:100vh;
+    background-image: url("Screenshot\ 2024-04-24\ 015258.png");
+    font-size: 200px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+.liberalwin{
+    position: fixed;
+    z-index: 1;
+    top:0%;
+    width:100vw;
+    height:100vh;
+    background-image: url("Screenshot\ 2024-04-24\ 015246.png");
+    font-size: 200px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+
+}
+#liberalanimation{
+    position: fixed;
+}
+#fascistanimation{
+    position: fixed;
+}
+#box-1{
+    background-color: rgba(20, 172, 211, 0.987);
+}
+#box-2{
+    background-color: #eedc158e;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 0.16fr;
+    
+}
+#box-3{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+#box-4{
+   display: grid;
+   grid-template-rows: 50% 50%;
+}
+#box-5{
+    background-color: rgba(206, 155, 26, 0.577);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border:1px solid white
+}
+#box-6{
+    background-color: #2e2e8ab7;
+}
+.membercard{
+    background-color: #da530aab;
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+    background-image: url('secretHitlerMembership.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border:2px groove rgb(5, 255, 209);
+    animation-name:membercardanimate ;
+    animation-duration: 2s;
+    transition-duration: 1.5s;
+
+}
+@keyframes membercardanimate{
+    0%{
+        transform: translateX(70px);
+    }
+
+    20%{
+        transform: translateY(-60px);
+    }
+
+}
+.names{
+    text-align: center;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    overflow: auto;
+    margin-top: 84%;
+    border:2px solid white;
+    height:17%;
+    background-color: aliceblue;
+
+}
+.membercardbutton{
+    background-color: rgb(238, 251, 0);
+    text-align:center;
+    border-radius: 200px;
+    border:2px solid red;
+    transition-duration:0.5s ;
+    transition-property: border-radius,background-color ;
+    font-family: cursive;
+}
+.membercardbutton:hover{
+    border-radius: 0px;
+    background-color: rgb(73, 178, 73);
+}
+
+.membership{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+.membership_heading{
+    text-align: center;
+    font-size: 35px;
+    background-color:rgba(0, 255, 255, 0.554);
+    color:#0f323c;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: auto;
+}
+.Hitler_Identification{
+    margin-top: 25px;
+    background-color: rgb(255, 35, 2);
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+.Hitler_Identification_Heading{
+    text-align: center;
+    font-size: 35px;
+    background-color: #dff800;
+    color:#0f323c;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: auto;
+}
+#Hitler_Identification_Name{
+    background-color: antiquewhite;
+    height:65%;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: auto;
+    font-size:40px ;
+    text-align: center;
+    color: red;
+}
+#player_name{
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: auto;
+    position: relative;
+    height:15%;
+    margin-top: 20px;
+    background-color:rgba(0, 255, 255, 0.554);
+    color:#0f323c;
+    font-size: 35px;
+    text-align: center;
+}
+#Secret_Role{
+    overflow: auto;
+    margin-top: 10px;
+    height:10%;
+    text-justify: auto;
+    font-size: 25px;
+    background-color: rgba(0, 255, 255, 0.554);
+    text-align: center;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#secret_role{
+    background-color: beige;
+    height:45%;
+    font-size: 40px;
+    text-align: center;
+    color: #155263;
+}
+.image_liberal{
+    margin-inline: auto;
+    width:30%;
+    height:100%;
+    background-image: url('Screenshot\ 2024-04-23\ 221315.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.image_fascist{
+    margin-inline: auto;
+    width:30%;
+    height:100%;
+    background-image: url('Screenshot\ 2024-04-23\ 222455.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.image_hitler{
+    margin-inline: auto;
+    width:30%;
+    height:100%;
+    background-image: url('Screenshot\ 2024-04-23\ 222540.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.decisions_heading{
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 5px;
+    overflow: auto;
+    margin-top: 5%;
+    background-color: rgb(215, 226, 236);
+    height:18%;
+    text-align: center;
+    font-size: 35px;
+}
+.decisions1{
+    margin-inline: auto;
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 100px;
+    width:80%;
+    background-color: rgba(48, 236, 67, 0.564);
+    height:15%;
+    font-size: 40px;
+    text-align: center;
+    color: #155263;
+    transition-duration: 0.5s;
+    transition-property: transform,border-radius,background-color;
+}
+.decisions1:hover{
+    transform:skew(20deg);
+    border-radius: 0px;
+    background-color: white;
+}
+.decisions2{
+    margin-inline: auto;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 100px;
+    width:80%;
+    background-color: rgba(212, 17, 17, 0.564);
+    height:15%;
+    font-size: 40px;
+    text-align: center;
+    color: #155263;
+    transition-duration: 0.5s;
+    transition-property: transform,border-radius,background-color;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355);
+}
+.decisions2:hover{
+    transform:skew(20deg);
+    border-radius: 0px;
+    background-color: white;
+}
+.image_yes{
+    margin-inline: auto;
+    width:30%;
+    height:100%;
+    background-image: url('Screenshot\ 2024-04-23\ 223135.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.image_no{
+    margin-inline: auto;
+    width:30%;
+    height:100%;
+    background-image: url('Screenshot\ 2024-04-23\ 224029.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#fascistbox{
+    background-image: url('FinalFacistBoard.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: auto;
+    border:1px solid black;
+    transition-duration: 5s;
+    animation-name: animateboardfascist;
+    animation-duration: 2s;
+    transition-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+#liberalbox{
+    background-image: url('FinalLiberalBoard.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: auto;
+    border:1px solid black;
+    transition-duration: 5s;
+    animation-name: animateboardliberal;
+    animation-duration: 2s;
+    transition-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animateboardfascist{
+    0%{
+        transform: translateX(-100px);
+    }
+}   
+@keyframes animateboardliberal{
+    0%{
+        transform: translateX(100px);
+    }
+}  
+#fascistboxscore{
+    background-color: rgb(207, 193, 193);
+    font-size: 130px;
+    font-weight:bolder;
+    font-style: normal;
+    overflow: auto;
+    color: #0f414f;
+    border-bottom:0.5px ridge black;
+
+}
+#liberalboxscore{
+    background-color: rgb(207, 193, 193);
+    font-size: 130px;
+    font-weight:bolder;
+    font-style: normal;
+    overflow: auto;
+    color: #0f414f;
+    border-bottom:0.5px ridge black;
+
+
+}
+.President{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.President_Heading{
+    background-color: rgb(47, 212, 241);
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: auto;
+    font-size:40px ;
+    text-align: center;
+    color: #0f323c;
+}
+.President_Name{
+    background-color: antiquewhite;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: auto;
+    font-size:40px ;
+    text-align: center;
+    color: #001efc;
+}.Chancellor{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.Chancellor_Heading{
+    background-color: rgb(47, 212, 241);
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: auto;
+    font-size:40px ;
+    text-align: center;
+    color: #0f323c;
+}
+.Chancellor_Name{
+    background-color: antiquewhite;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: auto;
+    font-size:40px ;
+    text-align: center;
+    color: #001efc;
+}
+
+
+
+
+
+
+
+
+.loadingScreenHide{
+    position: fixed;
+   
+}
+.loadingScreenHideMessage{
+    position: fixed;
+    visibility: hidden;
+}
+.loadingScreenShow{
+    top:0%;
+    position: fixed;
+    height:100vh;
+    width:100vw;
+    background-color: #000003;
+}
+.loadingScreenMessage{
+    position: fixed;
+    color:white;
+    top:30%;
+    left:30%
+}
+.LiberalPointHide{
+    position: fixed;
+}
+.LiberalPointShow{
+    position: fixed;
+    top:10%;
+    left:35%;
+    height:600px;
+    width:600px;
+    background-image: url('Screenshot\ 2024-04-23\ 221315.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-duration:4s ;
+    animation-name:styleLiberalPoint ;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+@keyframes styleLiberalPoint {
+    5%{
+        transform: skew(15deg);
+    }
+    20%{
+        background-image: url('Screenshot\ 2024-04-24\ 015246.png');
+    }
+    60%{
+        background-image: url('Screenshot\ 2024-04-24\ 015246.png');
+    }
+}
+.FascistPointHide{
+    position: fixed;
+}
+.FascistPointShow{
+    position: fixed;
+    top:10%;
+    left:35%;
+    height:600px;
+    width:600px;
+    background-image: url('Screenshot\ 2024-04-23\ 222455.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: styleFascistPoint ;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+@keyframes styleFascistPoint {
+    5%{
+        transform: skew(15deg);
+    }
+    20%{
+        background-image: url('Screenshot\ 2024-04-24\ 015258.png');
+    }
+    60%{
+        background-image: url('Screenshot\ 2024-04-24\ 015258.png');
+    }
+}

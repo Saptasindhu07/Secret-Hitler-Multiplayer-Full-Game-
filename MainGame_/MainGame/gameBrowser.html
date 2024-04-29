@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gameBrowser.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js" integrity="sha512-luMnTJZ7oEchNDZAtQhgjomP1eZefnl82ruTH/3Oj/Yu5qYtwL7+dVRccACS/Snp1lFXq188XFipHKYE75IaQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="gameBrowser.js" defer></script>
+    <title>LOLI Game Room</title>
+</head>
+<body>
+    <div id="fascistWin" class="">
+        
+    </div>
+    <div id="liberalWin" class="">
+        
+    </div>
+    <div class="lossanimationconstant collapse">
+        <div class="lossanimationconstanttext collapse">
+           LOSS
+        </div>
+    </div>
+    <div class="winanimationconstant collapse">
+        <div class="winanimationconstanttext collapse">
+           WON
+        </div>
+    </div>
+    <div class="ChooseCardInvisible">
+        <div class="card" id="card0">
+
+        </div>      
+        <div class="card" id="card1"> 
+
+        </div>          
+        <div class="card" id="card2"> 
+
+        </div>      
+    </div>
+    <div class="ChooseCardInvisiblePresident">
+        <div class="card" id="card3">
+
+        </div>      
+        <div class="card" id="card4"> 
+
+        </div>              
+    </div>
+    <div id="liberalanimation" class="">
+
+    </div>
+    <div id="fascistanimation" class="">
+
+    </div>
+    <div class="container">
+        <div class="box" id="box-1">
+            <div id="player_name">
+                
+            </div>
+            <div id="Secret_Role">
+                Your Secret Role Is:
+            </div>
+            <div id="secret_role">
+                <div id="dummy1">
+
+                </div>
+            </div>
+        </div>
+            
+        <div class="box" id="box-2">
+            <div id="fascistbox"></div>
+            <div id="fascistboxscore"></div>
+            <div id="liberalbox"></div>
+            <div id="liberalboxscore"></div>
+        </div>
+        <div class="box" id="box-3">
+            <div class="President">
+                <div class="President_Heading">
+                    PRESIDENT
+                </div>
+                <div class="President_Name">
+                </div>
+            </div>
+            <div class="Chancellor">
+                <div class="Chancellor_Heading">
+                    CHANCELLOR
+                </div>
+                <div class="Chancellor_Name"> 
+                </div>
+            </div>
+        </div>
+        <div class="box" id="box-4">
+            <div class="membership">
+                <div class="membership_heading">
+                    Party Membership
+                </div>
+                <div id="dummy2">
+                </div>
+            </div>
+            <div class="Hitler_Identification">
+                <div class="Hitler_Identification_Heading">
+                    Hitler is:
+                </div>
+                <div id="Hitler_Identification_Name">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="box" id="box-5">
+            
+        </div>
+        <div class="box" id="box-6">
+            <div class="decisions_heading">
+                Your Vote Counts!!
+            </div>
+            <div class="decisions1">
+                <div class="image_yes">
+
+                </div>
+            </div>
+            <div class="decisions2">
+                <div class="image_no">
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="LiberalPointHide"><!-- LiberalPointHide LiberalPointShow-->
+    </div>
+    <div class="FascistPointHide"><!-- FascistPointHide FascistPointShow-->
+    </div>
+</body>
+</html>
